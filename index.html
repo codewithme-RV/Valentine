@@ -8,7 +8,7 @@ body{margin:0;font-family:Arial;background:linear-gradient(135deg,#ff9a9e,#fad0c
 
 h1{color:#e91e63}
 
-/* SLIDESHOW */ .slideshow{width:100%;height:220px;border-radius:15px;overflow:hidden;margin-bottom:10px} .slideshow img{width:100%;height:220px;object-fit:cover;display:none}
+/* SLIDESHOW */ .slideshow{width:100%;height:240px;border-radius:15px;overflow:hidden;margin-bottom:10px;background:#000} .slideshow img{width:100%;height:240px;object-fit:contain;display:none;background:#000}
 
 .buttons{margin-top:10px;position:relative;height:140px} button{padding:12px 25px;font-size:18px;border:none;border-radius:30px;cursor:pointer;position:absolute} #yesBtn{background:#e91e63;color:white;left:40px} #noBtn{background:#ccc;left:220px}
 
@@ -36,15 +36,20 @@ h1{color:#e91e63}
  <img src="photo3.jpg">
  <img src="photo4.jpg">
  <img src="photo5.jpg">
+ <img src="photo6.jpg">
 </div><h1>Nikita, will you be Rohit's Valentine? 💖</h1>
 <p>You make my world brighter every day ✨</p><div class="buttons">
  <button id="yesBtn">Yes ❤️</button>
  <button id="noBtn">No 🙈</button>
 </div><div id="message">
- i want to spend my whole life with you like we spend these year together and want to give hugs daily and call you paglu till the world's end 💞<br><br>
- my sweety, my rashgulla, meri jaan, my candy ❤️
+I want to grow old with you, just like we’ve grown together all these years.<br>
+I want to hug you after every long day, make you smile when you’re upset, and keep calling you paglu till we’re old and grey.<br>
+You are my comfort, my happiness, my home.<br><br>
+My sweetheart, my rashgulla, meri jaan, my candy — life feels perfect with you ❤️
 </div><div id="secret">🌹 "No matter how many lives I get, I will always choose you." 🌹</div>
-</div><!-- Romantic music (YouTube) --><iframe width="0" height="0" src="https://www.youtube.com/embed/0G2VxhV_gXM?autoplay=1&loop=1&playlist=0G2VxhV_gXM" frameborder="0" allow="autoplay"></iframe><script>
+</div><!-- MAIN TERI HO GAYI SONG --><iframe width="0" height="0" 
+src="https://www.youtube.com/embed/0G2VxhV_gXM?autoplay=1&loop=1&playlist=0G2VxhV_gXM" 
+allow="autoplay"></iframe><script>
 /* PASSWORD */
 function unlock(){
  if(document.getElementById('pass').value.toLowerCase().includes('babu') || document.getElementById('pass').value.toLowerCase().includes('motu')){
@@ -119,7 +124,7 @@ function show(){
  slides.forEach(s=>s.style.display='none')
  i=(i+1)%slides.length
  slides[i].style.display='block'
- setTimeout(show,2000)
+ setTimeout(show,2500)
 }
 show()
 </script></body>
